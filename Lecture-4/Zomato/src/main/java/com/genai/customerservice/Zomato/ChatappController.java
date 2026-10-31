@@ -2,7 +2,7 @@ package com.genai.customerservice.Zomato;
 
 import org.springframework.web.bind.annotation.*;
 
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class ChatappController {
