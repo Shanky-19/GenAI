@@ -16,7 +16,8 @@ public class WebsiteTools {
         try{
             Files.createDirectories(workspace);
         } catch (IOException e) {
-            throw new IllegalArgumentException("Could not find website workspace")
+            throw new IllegalArgumentException("Could not find website workspace");
         }
     }
+
 }
