@@ -1,25 +1,26 @@
 package com.genai.ai_agent.controllers;
 
 import com.genai.ai_agent.services.ChatService;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import com.genai.ai_agent.services.WebsiteBuilderService;
+import org.springframework.web.bind.annotation.*;
 
+@RestController
+@RequestMapping("/ai")
 public class WebsiteBuilderController {
-    private ChatService chatappService;
+    private WebsiteBuilderService websiteBuilderService;
 
     // constuctor injection
-    public ChatController(ChatService chatappService) {
-        this.chatappService = chatappService;
+    public WebsiteBuilderController(WebsiteBuilderService websiteBuilderService) {
+        this.websiteBuilderService = websiteBuilderService;
     }
 
-    @PostMapping("/chat")
-    public String chat(@RequestBody String message) {
-        return chatappService.chat(message);
+    @PostMapping("/generate")
+    public String generate(@RequestBody String message) {
+        return websiteBuilderService.generate(message);
     }
 
     @DeleteMapping
     public void clearChat() {
-        chatappService.clearHistory();
+        websiteBuilderService.clearHistory();
     }
 }

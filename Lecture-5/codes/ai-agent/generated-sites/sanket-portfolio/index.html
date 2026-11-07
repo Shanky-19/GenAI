@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanket Banait — Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Sanket Banait</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="accent">Sanket Banait</span></h1>
+        <p class="lead">Software engineer at Arcesium. Previously at ArmorCode and interned at Raaho. I build reliable, maintainable systems and delightful user experiences.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="profile-pic" aria-hidden="true">SB</div>
+        <ul class="quick-stats">
+          <li><strong>Arcesium</strong><span>Software Engineer</span></li>
+          <li><strong>ArmorCode</strong><span>Software Engineer</span></li>
+          <li><strong>Raaho</strong><span>Intern</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>About</h2>
+      <p>I am a software engineer at Arcesium with experience building scalable backend services and polished frontend apps. My interests include distributed systems, developer tooling and UX. I enjoy working across the stack and learning new technologies.</p>
+      <div class="skills">
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Docker</span>
+        <span>Postgres</span>
+      </div>
+    </section>
+
+    <section class="container experience" id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="t-left">
+            <h3>Software Engineer</h3>
+            <p class="muted">Arcesium</p>
+          </div>
+          <div class="t-right">
+            <time>Present</time>
+            <p>Working on core platform services, improving performance and developer experience across the stack.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-left">
+            <h3>Software Engineer</h3>
+            <p class="muted">ArmorCode</p>
+          </div>
+          <div class="t-right">
+            <time>Previous</time>
+            <p>Contributed to security tooling and backend services, focusing on reliability and automation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-left">
+            <h3>Intern</h3>
+            <p class="muted">Raaho</p>
+          </div>
+          <div class="t-right">
+            <time>Internship</time>
+            <p>Built features and assisted in improving product performance during internship.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container projects" id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>A short description of a project that demonstrates backend and frontend skills.</p>
+          <a class="link" href="#">Case study</a>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>A short description of another project focused on tooling or performance.</p>
+          <a class="link" href="#">Case study</a>
+        </article>
+        <article class="card">
+          <h3>Open Source</h3>
+          <p>Contributions to OSS projects and libraries. Links to GitHub available on request.</p>
+          <a class="link" href="#">GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <p>I'm open to new opportunities and collaborations. Reach out via email or LinkedIn.</p>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <div>© <span id="year"></span> Sanket Banait</div>
+      <div class="socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
