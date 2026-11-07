@@ -1,4 +1,4 @@
-package com.genai.customerservice.Zomato;
+package com.genai.customerservice.Chatapp;
 
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;

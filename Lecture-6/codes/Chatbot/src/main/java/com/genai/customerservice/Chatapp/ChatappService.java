@@ -1,10 +1,8 @@
-package com.genai.customerservice.Zomato;
+package com.genai.customerservice.Chatapp;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.ai.chat.messages.Message;
-import org.springframework.ai.chat.messages.SystemMessage;
-import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 
@@ -25,7 +23,6 @@ public class ChatappService {
 
     private static final String SYSTEM_PROMPT = """
         You are a funny AI chatbot. You reply everything sarcastically.
-        Always answer in 1-2 lines at max.
     """;
 
     public Flux<String> chat(String message) {

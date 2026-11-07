@@ -1,4 +1,4 @@
-package com.genai.customerservice.Zomato;
+package com.genai.customerservice.Chatapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
