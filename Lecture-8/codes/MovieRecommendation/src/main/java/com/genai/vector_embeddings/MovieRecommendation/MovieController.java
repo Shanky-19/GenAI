@@ -1,13 +1,11 @@
 package com.genai.vector_embeddings.MovieRecommendation;
 
 import com.genai.vector_embeddings.MovieRecommendation.model.MovieMatch;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/movies")
 public class MovieController {
@@ -19,8 +17,8 @@ public class MovieController {
     }
 
     @GetMapping("/search")
-    public void search(String query) {
-        movieService.search(query);
+    public List<MovieMatch> search(@RequestParam String query) {
+        return movieService.search(query);
     }
 
     @GetMapping("/{title}/similar")
